@@ -29,7 +29,7 @@ jobs:
           # 这个例子中，设置为 ghcr.io 和 zong-zhe
           KPM_REG: "ghcr.io"
           KPM_REPO: "zong-zhe"
-        run: kpm login -u ${{ github.actor }} -p ${{ secrets.G_TOKEN }} ghcr.io && kpm push
+        run: kpm login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }} ghcr.io && kpm push
 
       - name: Run kpm project
         # 测试是否 push 成功
