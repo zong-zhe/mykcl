@@ -23,7 +23,7 @@ jobs:
 
       # kpm login and kpm push
       - name: Push kpm project
-        env:
+        # env:
           # kpm 支持通过环境变量 KPM_REG 和 KPM_REPO 自定义 OCI Registry 地址和仓库名
           # 如果不设置，默认的 OCI Registry 地址为 ghcr.io，仓库名为 kcl-lang.
           # 这个例子中，设置为 ghcr.io 和 zong-zhe
